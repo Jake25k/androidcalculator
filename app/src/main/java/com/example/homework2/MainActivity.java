@@ -147,7 +147,13 @@ public class MainActivity extends AppCompatActivity {
                     div = false;
                 }
                 else {
-                    Value1 = Double.parseDouble(edit1.getText().toString());
+                    try { //just incase the user doesnt insert a value
+                        Value1 = Double.parseDouble(edit1.getText().toString());
+                    }
+                    catch(Exception ex){
+                        Value1 = 0.0;
+
+                    }
                     add = true;
                     sub = false;
                     mul = false;
@@ -167,7 +173,13 @@ public class MainActivity extends AppCompatActivity {
                     div = false;
                 }
                 else {
-                    Value1 = Double.parseDouble(edit1.getText().toString());
+                    try { //just incase the user doesnt insert a value
+                        Value1 = Double.parseDouble(edit1.getText().toString());
+                    }
+                    catch(Exception ex){
+                        Value1 = 0.0;
+
+                    }
                     add = false;
                     sub = true;
                     mul = false;
@@ -188,7 +200,13 @@ public class MainActivity extends AppCompatActivity {
                     div = false;
                 }
                 else {
-                    Value1 = Double.parseDouble(edit1.getText().toString());
+                    try { //just incase the user doesnt insert a value
+                        Value1 = Double.parseDouble(edit1.getText().toString());
+                    }
+                    catch(Exception ex){
+                        Value1 = 0.0;
+
+                    }
                     add = false;
                     sub = false;
                     mul = true;
@@ -208,7 +226,13 @@ public class MainActivity extends AppCompatActivity {
                     div = true;
                 }
                 else {
-                    Value1 = Double.parseDouble(edit1.getText().toString());
+                    try { //just incase the user doesnt insert a value
+                        Value1 = Double.parseDouble(edit1.getText().toString());
+                    }
+                    catch(Exception ex){
+                        Value1 = 0.0;
+
+                    }
                     add = false;
                     sub = false;
                     mul = false;
